@@ -1,92 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Evolución del Desempleo</title>
+    <title>Formulario de Información</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <table>
-      <caption>
-        Evolución del Desempleo en España<br />Comparado con la media de los 27
-        países de la Unión Europea, Grecia, Estados Unidos y Japón
-      </caption>
-      <thead>
-        <tr>
-          <th>País</th>
-          <th>2000</th>
-          <th>2001</th>
-          <th>2002</th>
-          <th>2003</th>
-          <th>2004</th>
-          <th>2005</th>
-          <th>2006</th>
-          <th>2007</th>
-          <th>2008</th>
-          <th>2009</th>
-          <th>2010</th>
-          <th>2011</th>
-          <th>2012</th>
-          <th>2013</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>UE (27 países)</td>
-          <td>8.9</td>
-          <td>8.7</td>
-          <td>8.3</td>
-          <td>8.0</td>
-          <td>8.8</td>
-          <td>8.4</td>
-          <td>9.0</td>
-          <td>9.3</td>
-          <td>9.6</td>
-          <td>9.5</td>
-          <td>9.7</td>
-          <td>8.8</td>
-          <td>8.6</td>
-          <td>8.5</td>
-        </tr>
-        <tr>
-          <td>España</td>
-          <td>11.9</td>
-          <td>10.6</td>
-          <td>10.4</td>
-          <td>10.2</td>
-          <td>10.7</td>
-          <td>10.4</td>
-          <td>10.8</td>
-          <td>11.1</td>
-          <td>11.6</td>
-          <td>10.5</td>
-          <td>10.7</td>
-          <td>11.4</td>
-          <td>11.8</td>
-          <td>11.6</td>
-        </tr>
-      </tr>
-      <td>Estados Unidos</td>
-      <td>11.9</td>
-          <td>9.5</td>
-          <td>9.3</td>
-          <td>9.8</td>
-          <td>10</td>
-          <td>10.6</td>
-          <td>10.3</td>
-          <td>11.1</td>
-          <td>11.7</td>
-          <td>10.9</td>
-          <td>10.7</td>
-          <td>11.3</td>
-          <td>11.2</td>
-          <td>11.4</td>
+    <div class="formulario">
+      <h2>Formulario de Información</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
 
-      </tbody>
-      <tfoot>
-        <tr>
-          <td colspan="15">Fuente: Índice de desempleo anual, Eurostat</td>
-        </tr>
-      </tfoot>
-    </table>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="url">URL:</label>
+        <input type="url" id="url" name="url" />
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" />
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
   </body>
 </html>
