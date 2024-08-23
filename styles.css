@@ -1,19 +1,24 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
+table {
+  border-collapse: collapse;
+  width: 100%;
 }
 
-h1 {
+th, td {
+  border: 1px solid #000000;
+  padding: 8px;
   text-align: center;
-  font-size: 24px;
-  color: #0d0e0d;
 }
 
-h2 {
-  color: rgb(15, 15, 15);
-  margin-top: 20px;
+th {
+  background-color: #00eeff;
 }
 
-p {
-  line-height: 1.5;
+caption {
+  caption-side: top;
+  font-weight: bold;
+  text-align: center;
+}
+
+tfoot td {
+  font-style: italic;
 }
